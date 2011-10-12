@@ -118,7 +118,7 @@ class Vehicle
     end
     
     event :shift_down do
-      transition :third_gear => :second_gear, :second_gear => :first_gear
+      transition :third_gear => :second_gear, :second_gear => :first_gear, :first_gear => :idling
     end
     
     event :crash do
